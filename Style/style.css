@@ -1,20 +1,20 @@
 @font-face {
    font-family: 'Arad';
-   src: url('/Font/Arad-Regular.woff2');
+   src: url('/font/Arad-Regular.woff2');
 }
 @font-face {
    font-family: 'Aradbold';
-   src: url('/Font/Arad-Bold.woff2');
+   src: url('/font/Arad-Bold.woff2');
 }
 @font-face {
    font-family: 'Aradmed';
-   src: url('/Font/Arad-Medium.woff2');
+   src: url('/font/Arad-Medium.woff2');
 }
 @font-face {
    font-family: 'Aradthin';
-   src: url('/Font/Arad-Thin.woff2');
+   src: url('/font/Arad-Thin.woff2');
 }
 @font-face {
    font-family: 'Aradxbold';
-   src: url('/Font/Arad-ExtraBold.woff2');
+   src: url('/font/Arad-ExtraBold.woff2');
 }
