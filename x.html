@@ -1,515 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAWS</title>
-    <link rel="stylesheet" href="Style/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <style>
-        .nav-item.active {
-            background-color: #1FA3E1;
-            color: white !important;
-        }
-        .page-content {
-            display: none;
-        }
-        .page-content.active {
-            display: block;
-        }
-    </style>
-</head>
-<body class="bg-[#18181A] font-[Arad]">
-
-<div class="flex h-screen">
-    <div id="menu" class="w-1/6 border-dotted border-l-3 border-neutral-800 grid grid-cols-1">
-        <div class="w-full h-24 mb-15">
-            <div class="py-4 flex mr-8">
-                <img src="Img/taha.png" alt="logo" class="size-16">
-                <h1 class="text-4xl text-[#FDFDFD] py-5 px-2 leading-[1.2]">تــاز مارکت</h1>
-            </div>
-        </div>
-
-        <div>
-            <button class="nav-item py-4 flex mr-8 text-[#C2C4C4] hover:text-[#1FA3E1]" data-page="page1">
-                <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="currentColor" d="M256.5 37.6..."/></svg>
-                <span class="text-2xl px-1">استیم پوینت</span>
-            </button>
-
-            <button class="nav-item py-4 flex mr-8 text-[#C2C4C4] hover:text-[#1FA3E1]" data-page="page2">
-                <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="currentColor" d="M256.5 37.6..."/></svg>
-                <span class="text-2xl px-1">کلید تی اف دو</span>
-            </button>
-
-            <button class="nav-item py-4 flex mr-8 text-[#C2C4C4] hover:text-[#1FA3E1]" data-page="page3">
-                <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="currentColor" d="M256.5 37.6..."/></svg>
-                <span class="text-2xl px-1">ست لول آپ</span>
-            </button>
-
-            <button class="nav-item py-4 flex mr-8 text-[#C2C4C4] hover:text-[#1FA3E1]" data-page="page4">
-                <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="currentColor" d="M256.5 37.6..."/></svg>
-                <span class="text-2xl px-1">دوتا پلاس</span>
-            </button>
-        </div>
-        
-        <div class="content-end mb-8 m-auto">
-            <a href="https://t.me/TahazuS" class="bg-[#1FA3E1] w-64 h-11 transition-colors font-extrabold text-zinc-900 rounded-xl px-6 py-2 text-center shadow-md">
-            خرید سریع از تلگرام ⇽
-            </a>
-        </div>
-    </div>
-    
-    <div id="main" class="w-5/6 h-full">
-        <div id="content-container">
-            <div id="page1-content" class="page-content active">
-                    <div class="m-auto py-5 px-3 max-w-6xl pointer-events-auto">
-      <div class="bg-white/5 backdrop-blur-sm rounded-3xl shadow-2xl border-2 border-zinc-800 p-6 md:p-10">
-        <div class="flex flex-col md:flex-row items-center gap-10">
-          <!-- Image -->
-          <div class="w-full md:w-1/2">
-            <img src="/Img/steampoint.webp" alt="استیم پوینت" class="w-full rounded-xl object-cover shadow-lg border border-amber-200/40" loading="lazy" />
-          </div>
-          <!-- Details -->
-          <div class="flex flex-col gap-6 w-full md:w-1/2">
-            <h2 class="text-2xl md:text-3xl font-extrabold text-amber-400">استیم پوینت</h2>
-            <p class="text-zinc-200 text-lg leading-relaxed">
-              استیم پوینت نوعی اعتبار در پلتفرم استیم است که کاربران از طریق خرید بازی یا شرکت در فعالیت‌ها کسب می‌کنند.
-              <br>می‌توان از آن برای خرید آیتم‌هایی مانند آواتار، استیکر، پوستر و غیره در 
-              <a class="text-amber-300" href="https://store.steampowered.com/points/shop/" target="_blank" rel="noopener noreferrer">استیم پوینت شاپ</a> استفاده کرد.
-              <br>برای هر ۱ دلار، ۱۰۰ عدد 
-              <a class="text-amber-300" href="https://store.steampowered.com/points/howitworks#Title" target="_blank" rel="noopener noreferrer">استیم پوینت</a> دریافت می‌کنید.
-            </p>
-            <ul class="space-y-1 text-base text-zinc-400">
-              <li>🟡 زمان تحویل: ۵ دقیقه تا ۱ ساعت</li>
-              <li>🟠 پرداخت: از طریق تلگرام (پشتیبانی مستقیم)</li>
-              <li>🔗 نیازمند: لینک پروفایل استیم شما</li>
-            </ul>
-            <div class="flex flex-col gap-3 mt-2">
-              <span class="font-bold bg-amber-200 text-amber-700 px-4 py-2 rounded-lg text-base text-center shadow">هزار عدد: ۱۸,۰۰۰ تومان</span>
-              <a href="https://t.me/TahazuS" class="bg-amber-400 hover:bg-amber-500 transition-colors font-extrabold text-zinc-900 rounded-xl px-6 py-2 text-center shadow-md">
-                خرید سریع از تلگرام 🚀
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-            </div>
-            
-            <div id="page2-content" class="page-content">
-               <div class="text-white px-6 py-20 pointer-events-auto">
-   <div class="max-w-5xl mx-auto">
-
-      <!-- Layout -->
-      <div class="flex flex-col md:flex-row gap-10">
-
-         <!-- Image -->
-         <div class="flex-shrink-0 w-full md:w-1/2">
-         <img src="/Img/tf2key.webp" alt="tf2 keys - تی اف دو کلید" class="w-full rounded-lg shadow-md object-cover" loading="lazy">
-         </div>
-
-         <!-- Details -->
-         <div class="flex flex-col justify-center w-full md:w-1/2 space-y-6">
-
-         <!-- Title -->
-         <h1 class="text-3xl font-bold Aradbold">کلید تی اف دو</h1>
-
-         <!-- Description -->
-         <p class="text-zinc-300 text-lg leading-relaxed">
-               <a class="text-amber-300" href="https://steamcommunity.com/market/listings/440/Mann%20Co.%20Supply%20Crate%20Key" target="_blank" rel="noopener noreferrer external">کلید تی اف دو (Mann Co. Supply Crate Key)</a> یکی از آیتم‌های ارزشمند در بازی Team Fortress 2 است که به عنوان ارز مجازی بازی استفاده می‌شود.<br>کلیدهای TF2 به عنوان واحد مبادله در بازارهای سوم‌شخص (مثل سایت‌های خریدوفروش آیتم‌های بازی) و حتی در خود <a class="text-amber-300" href="https://steamcommunity.com/market/" rel="noopener noreferrer external">استیم مارکت</a> استفاده می‌شوند. ارزش این کلیدها معمولاً بر اساس عرضه و تقاضا تعیین می‌شود و در طول زمان نوسان دارد.
-         </p>
-
-         <!-- مشخصات محصول با آیکون -->
-         <ul class="rounded-lg p-4 text-sm text-zinc-300 space-y-4 border border-zinc-700">
-         <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"></path>
-               <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none" />
-            </svg>
-            <span><span class="text-amber-400 font-semibold">زمان تحویل</span> بین ۱ دقیقه تا ١٠ دقیقه</span>
-         </li>
-
-         <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a4 4 0 00-8 0v2m-4 0h16v10a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
-            </svg>
-            <span><span class="text-amber-400 font-semibold">طریقه پرداخت:</span> از طریق تلگرام (پشتیبانی مستقیم)</span>
-         </li>
-
-         <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span><span class="text-amber-400 font-semibold">اطلاعات مورد نیاز:</span> ترید لینک شما</span>
-         </li>
-         </ul>
-         <!-- Price & CTA -->
-         <div class="w-full max-w-[700px] px-4">
-            <div class="flex flex-col md:flex-row justify-start gap-4 mt-4">
-            <button class="bg-amber-400 hover:bg-amber-500 text-zinc-900 font-bold py-2 px-4 rounded-lg text-sm md:text-base">
-                               قیمت کلید: <span class="text-zinc-800">١٦٠,٠٠٠ تومان</span>
-            </button>  
-            </div>
-
-            <a href="https://t.me/TahazuS" 
-               class="block md:inline-block mt-4 bg-amber-800 hover:bg-amber-600 px-5 py-2 rounded-lg text-white font-medium transition-colors duration-200 text-center">
-               همین الان خرید کن
-            </a>
-         </div>
-
-         </div>
-      </div>
-   </div>
-   </div>
-            </div>
-            
-            <div id="page3-content" class="page-content">
-                <!-- Main -->
-   <div class="text-white px-6 py-20 pointer-events-auto">
-   <div class="max-w-5xl mx-auto">
-
-      <!-- Layout -->
-      <div class="flex flex-col md:flex-row gap-10">
-
-         <!-- Image -->
-         <div class="flex-shrink-0 w-full md:w-1/2">
-         <img src="/Img/lvlupsets.webp" alt="lvlupsets - ست لول آپ" class="w-full rounded-lg shadow-md object-cover" loading="lazy">
-         </div>
-
-         <!-- Details -->
-         <div class="flex flex-col justify-center w-full md:w-1/2 space-y-6">
-
-         <!-- Title -->
-         <h1 class="text-3xl font-bold Aradbold">ست لول آپ</h1>
-
-         <!-- Description -->
-         <p class="text-zinc-300 text-lg">
-            کارت‌های لول آپ در استیم کارت‌های دیجیتالی هستند که با انجام فعالیت‌های مختلف در پلتفرم استیم، مانند خرید بازی، شرکت در ایونت‌ها یا کامل کردن مجموعه کارت‌های دیگر به دست می‌آیند. <br>
-            هر بار که این کارت‌ها را جمع‌آوری می‌کنید، لول اکانت استیم شما افزایش می‌یابد. بالا بردن لول مزایایی مثل:  <br>
-            - پروفایل جذاب‌تر با قاب‌ها و امکانات بیشتر.  <br>
-            - امکان اضافه کردن دوستان بیشتر به لیست.  <br>
-            افزایش لول استیم بیشتر جنبه نمایشی و شخصی‌سازی پروفایل دارد، اما برای بعضی کاربران جنبه کلکسیونی و چالش‌دار هم هست! 
-         </p>
-
-         <!-- مشخصات محصول با آیکون -->
-         <ul class="rounded-lg p-4 text-sm text-zinc-300 space-y-4 border border-zinc-700">
-         <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"></path>
-               <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none" />
-            </svg>
-            <span><span class="text-amber-400 font-semibold">زمان تحویل</span> بین ۵ دقیقه تا ٣٠ دقیقه</span>
-         </li>
-
-         <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a4 4 0 00-8 0v2m-4 0h16v10a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
-            </svg>
-            <span><span class="text-amber-400 font-semibold">طریقه پرداخت:</span> از طریق تلگرام (پشتیبانی مستقیم)</span>
-         </li>
-
-         <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span><span class="text-amber-400 font-semibold">اطلاعات مورد نیاز:</span> ترید لینک </span>
-         </li>
-         </ul>
-         <!-- Price & CTA -->
-         <div class="w-full max-w-[700px] px-4">
-            <div class="flex flex-col md:flex-row justify-start gap-4 mt-4">
-            <button class="bg-amber-400 hover:bg-amber-500 text-zinc-900 font-bold py-2 px-4 rounded-lg text-sm md:text-base">
-                  هر ست: <span class="text-zinc-800">١٨,٠٠٠ تومان</span>
-            </button>  
-            </div>
-
-
-            <a href="https://t.me/TahazuS" 
-               class="block md:inline-block mt-4 bg-amber-800 hover:bg-amber-600 px-5 py-2 rounded-lg text-white font-medium transition-colors duration-200 text-center">
-               همین الان خرید کن
-            </a>
-         </div>
-
-         </div>
-      </div>
-   </div>
-   </div>
-            </div>
-            
-            <div id="page4-content" class="page-content">
-                 <!-- Main -->
-   <div class="text-white px-6 py-20 pointer-events-auto">
-   <div class="max-w-5xl mx-auto">
-
-      <!-- Layout -->
-      <div class="flex flex-col md:flex-row gap-10">
-
-         <!-- Image -->
-         <div class="flex-shrink-0 w-full md:w-1/2">
-         <img src="/Img/DotaPlus.webp" alt="دوتا پلاس - Dota Plus" class="w-full rounded-lg shadow-md object-cover" loading="lazy">
-         </div>
-
-         <!-- Details -->
-         <div class="flex flex-col justify-center w-full md:w-1/2 space-y-6">
-
-         <!-- Title -->
-         <h1 class="text-3xl font-bold Aradbold">دوتا پلاس</h1>
-
-         <!-- Description -->
-         <p class="text-zinc-300 text-lg leading-relaxed">
-            <a class="text-amber-300" href="https://www.dota2.com/plus" target="_blank" rel="noopener noreferrer external">دوتا پلاس </a> یه سرویس پولی برای <a class="text-amber-300" href="https://www.dota2.com/home" target="_blank" rel="noopener noreferrer external">بازی Dota 2</a> هست که ماهانه هزینه داره. با خرید این اشتراک، امکانات خاصی گیرت میاد، مثل:  <br>- آمار و تحلیل بازی برای پیشرفت شخصی<br>- مأموریت‌های هفتگی و جایزه (مثل شارد برای ارتقای هیرو ها)<br>- پیشنهاد ساخت آیتم و انتخاب قهرمان بر اساس وضعیت بازی<br>- محتوای اختصاصی مثل ست لباس، اموجی و صداهای چت
-         </p>
-
-         <!-- مشخصات محصول با آیکون -->
-         <ul class="rounded-lg p-4 text-sm text-zinc-300 space-y-4 border border-zinc-700">
-         <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"></path>
-               <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none" />
-            </svg>
-            <span><span class="text-amber-400 font-semibold">زمان تحویل</span> بین ۵ دقیقه تا ۱ ساعت</span>
-         </li>
-
-         <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a4 4 0 00-8 0v2m-4 0h16v10a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
-            </svg>
-            <span><span class="text-amber-400 font-semibold">طریقه پرداخت:</span> از طریق تلگرام (پشتیبانی مستقیم)</span>
-         </li>
-
-         <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span><span class="text-amber-400 font-semibold">اطلاعات مورد نیاز:</span> لینک پروفایل استیم شما </span>
-         </li>
-         </ul>
-         <!-- Price & CTA -->
-         <div class="w-full max-w-[700px] px-4">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
-               <button class="bg-amber-400 hover:bg-amber-500 text-zinc-900 font-bold py-2 px-4 rounded-lg text-sm md:text-base">
-                  یک ماهه: <span class="text-zinc-800">٢٧٨,٠٠٠ تومان</span>
-               </button>
-               <button class="bg-amber-400 hover:bg-amber-500 text-zinc-900 font-bold py-2 px-4 rounded-lg text-sm md:text-base">
-                  شش ماهه: <span class="text-zinc-800">١,٦١٠,٠٠٠ تومان</span>
-               </button>
-               <button class="bg-amber-400 hover:bg-amber-500 text-zinc-900 font-bold py-2 px-4 rounded-lg text-sm md:text-base">
-                  دوازده ماهه: <span class="text-zinc-800">٣,٠٠٠,٠٠٠ تومان</span>
-               </button>
-            </div>
-
-            <a href="https://t.me/TahazuS" 
-               class="block md:inline-block mt-4 bg-amber-800 hover:bg-amber-600 px-5 py-2 rounded-lg text-white font-medium transition-colors duration-200 text-center">
-               همین الان خرید کن
-            </a>
-         </div>
-
-         </div>
-      </div>
-   </div>
-   </div>
-            </div>
-        </div>
-
-        <div class="border-dotted border-t-3 border-neutral-800 h-1/10">
-            <p class="pointer-events-auto text-center mt-5">تمامی حقوق برای تـــاز محفوظ میباشد.</p>
-        </div>
-    </div>
-</div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const navItems = document.querySelectorAll('.nav-item');
-        const pageContents = document.querySelectorAll('.page-content');
-        
-        // تابع تغییر صفحه
-        function changePage(pageId) {
-            // حذف active از همه آیتم‌ها
-            navItems.forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            // مخفی کردن همه صفحات
-            pageContents.forEach(content => {
-                content.classList.remove('active');
-            });
-            
-            // نمایش صفحه انتخاب شده
-            document.getElementById(`${pageId}-content`).classList.add('active');
-            
-            // آپدیت URL بدون رفرش
-            history.pushState(null, null, `?page=${pageId}`);
-        }
-        
-        // افزودن رویداد کلیک به دکمه‌های منو
-        navItems.forEach(item => {
-            item.addEventListener('click', function() {
-                const targetPage = this.getAttribute('data-page');
-                this.classList.add('active');
-                changePage(targetPage);
-            });
-        });
-        
-        // بررسی پارامتر صفحه در URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentPage = urlParams.get('page') || 'page1';
-        const targetItem = document.querySelector(`.nav-item[data-page="${currentPage}"]`);
-        
-        if (targetItem) {
-            targetItem.classList.add('active');
-            changePage(currentPage);
-        } else {
-            // حالت پیش‌فرض
-            document.querySelector('.nav-item').classList.add('active');
-            document.getElementById('page1-content').classList.add('active');
-        }
-    });
-    
-    // پشتیبانی از دکمه‌های جلو/عقب مرورگر
-    window.addEventListener('popstate', function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentPage = urlParams.get('page') || 'page1';
-        const targetItem = document.querySelector(`.nav-item[data-page="${currentPage}"]`);
-        
-        if (targetItem) {
-            document.querySelectorAll('.nav-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            document.querySelectorAll('.page-content').forEach(content => {
-                content.classList.remove('active');
-            });
-            
-            targetItem.classList.add('active');
-            document.getElementById(`${currentPage}-content`).classList.add('active');
-        }
-    });
-</script>
-
-</body>
-</html>
-
-
-
-<div class="body w-full xl:w-[80%] h-screen m-auto border-none border-x border-stone-700 xl:border-dashed py-5">
-
-<div class="head h-16 md:h-20 flex items-center justify-between px-4 md:px-8 py-0 border-b  border-stone-100">
-    <!-- Logo/Name -->
-    <div class="name">
-        <a class="text-xl sm:text-2xl font-bold" href="#">تاز</a>
-    </div>
-    
-    <!-- Menu Links - Hidden on mobile -->
-    <div class="hidden md:flex space-x-2 lg:space-x-6 text-base lg:text-xl">
-        <a class="px-2 lg:px-4 hover:text-blue-400 transition-colors" href="#">مقالات</a>
-        <a class="px-2 lg:px-4 hover:text-blue-400 transition-colors" href="#">قوانین</a>
-        <a class="px-2 lg:px-4 hover:text-blue-400 transition-colors" href="#">ارتباط</a>
-    </div>
-    
-
-    
-    
-</div>
-
-
-
-    <div class="main h-27/30"></div>
-
-    <div class="foot h-1/30 border-t-1 border-stone-700 border-dashed">
-        <p class="text-center py-3">تمامی حقوق برای <a class="no-underline hover:underline text-[#22AAEA]" href="https://t.me/TahazuS">تــــــــاز</a> محفوظ میباشد.</p>
-    </div>
-</div>
-
-
-
-
-
-<div class="mini-items w-full h-40">
-    <div class="item grid grid-cols-8 gap-x-5 content-center justify-items-center h-40">
-        <a href="">
-            <img class="size-30 rounded-xl" src="Img/steampoint.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">استیم پوینت</p>
-        </a>
-        <a href="">
-            <img class="size-30 rounded-xl" src="Img/tf2key.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">کلید تی اف دو</p>
-        </a>
-        <a href="">
-            <img class="size-30 rounded-xl" src="Img/dp.jpg" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">دوتا پلاس</p>
-        </a>
-        <a href="">
-            <img class="size-30 rounded-xl" src="Img/Tel-Pre.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">تلگرام پریمیوم</p>
-        </a>
-        <a href="">
-            <img class="size-30 rounded-xl" src="Img/lvlupsets.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">ست لول اپ</p>
-        </a>        
-        <a href="">
-            <img class="size-30 rounded-xl" src="Img/steampoint.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">استیم پوینت</p>
-        </a>
-        <a href="">
-            <img class="size-30 rounded-xl" src="Img/steampoint.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">استیم پوینت</p>
-        </a>
-        <a href="">
-            <img class="size-30 rounded-xl" src="Img/steampoint.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">استیم پوینت</p>
-        </a>
-
-    </div>
-</div>
-
-
-<div class="mini-items w-full">
-    <div class="item w-[80%] m-auto grid grid-cols-4 gap-x-8 gap-y-8 content-center justify-items-center">
-        <a href="">
-            <img class="size-50 rounded-xl" src="Img/steampoint.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">استیم پوینت</p>
-        </a>
-        <a href="">
-            <img class="size-50 rounded-xl" src="Img/tf2key.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">کلید تی اف دو</p>
-        </a>
-        <a href="">
-            <img class="size-50 rounded-xl" src="Img/dp.jpg" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">دوتا پلاس</p>
-        </a>
-        <a href="">
-            <img class="size-50 rounded-xl" src="Img/Tel-Pre.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">تلگرام پریمیوم</p>
-        </a>
-        <a href="">
-            <img class="size-50 rounded-xl" src="Img/lvlupsets.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">ست لول اپ</p>
-        </a>        
-        <a href="">
-            <img class="size-50 rounded-xl" src="Img/steampoint.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">استیم پوینت</p>
-        </a>
-        <a href="">
-            <img class="size-50 rounded-xl" src="Img/steampoint.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">استیم پوینت</p>
-        </a>
-        <a href="">
-            <img class="size-50 rounded-xl" src="Img/steampoint.webp" alt="steam point">
-            <p class="mr-2 mt-1 text-sm text-white">استیم پوینت</p>
-        </a>
-
-    </div>
-</div>
-
-
-<div class="justify-items-center h-10 border-b border-neutral-800">
-    <div class="hidden md:flex items-center space-x-20 h-full text-neutral-400 transition-colors">
-        <a class="hover:text-neutral-50" href="">استیم پوینت</a>
-        <a class="hover:text-neutral-50" href="">ست لول آپ استیم</a>
-        <a class="hover:text-neutral-50" href="">دوتا پلاس</a>
-        <a class="hover:text-neutral-50" href="">تلگرام پریمیوم</a>
-        <a class="hover:text-neutral-50" href="">گیفت کارت</a>
-        <a class="hover:text-neutral-50" href="">کلید تی اف دو</a>
-    </div>
-</div>
