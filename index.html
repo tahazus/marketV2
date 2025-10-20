@@ -22,7 +22,7 @@
 
 <!-- header -->
 <header x-data="{ open: false }" class="w-full h-16 border-b border-neutral-800">
-    <div class="w-[90%] md:w-[60%] mx-auto px-4 h-full">
+    <nav class="w-[90%] md:w-[60%] mx-auto px-4 h-full">
         <div class="flex items-center justify-between h-full">
 
             <a class="text-3xl text-white" href="">تـــاز</a>
@@ -39,7 +39,7 @@
                 </svg>
             </button>
         </div>
-    </div>
+    </nav>
 
     <div x-show="open" @click.away="open = false"
          class="md:hidden bg-[#1a1a1a] absolute w-full left-0 right-0 z-50 border-t border-neutral-800">
