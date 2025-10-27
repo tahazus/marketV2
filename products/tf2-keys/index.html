@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAWS — بهترین قیمت خدمات استیم و اشتراک‌های دیجیتال در ایران</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../src/style/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="../src/img/taha.png" type="image/png"/>
+
+    <!-- tailwinds -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-[#000000] font-[Arad] h-screen">
+
+<!-- header -->
+<header x-data="{ open: false }" class="w-full h-16 border-b border-neutral-800">
+    <nav class="w-[90%] md:w-[60%] mx-auto px-4 h-full">
+        <div class="flex items-center justify-between h-full">
+
+            <a class="text-3xl text-white" href="">تـــاز</a>
+
+            <div class="hidden md:flex items-center space-x-10 text-[#A1A1AA]">
+                <a class="hover:text-[#A78BFA] transition-colors" href="https://tahazus.ir/soon.html">بلاگ</a>
+                <a class="hover:text-[#A78BFA] transition-colors" href="https://tahazus.ir/soon.html">قوانین</a>
+                <a class="hover:text-[#A78BFA] transition-colors" href="https://tahazus.ir/soon.html">ارتباط</a>
+            </div>
+
+            
+            <button @click="open = !open" class="md:hidden text-neutral-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div x-show="open" @click.away="open = false"
+         class="md:hidden bg-[#1E1E2A] absolute w-full left-0 right-0 z-50 border-t border-[#2E2E3F]">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-3 text-center text-[#A1A1AA]">
+            <a class="hover:text-[#E4E4E7] py-2" href="">بلاگ</a>
+            <a class="hover:text-[#E4E4E7] py-2" href="">قوانین</a>
+            <a class="hover:text-[#E4E4E7] py-2" href="">ارتباط</a>
+        </div>
+    </div>
+</header>
+
+
+<div class="w-full">
+    <div class="w-[85%] md:w-[65%] mx-auto px-4 py-7">
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 p-4">
+            
+
+
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="w-full">
+    <div class="w-[85%] md:w-[65%] mx-auto px-4 py-10">
+        <div class="flex items-center p-5 text-stone-300 rounded-3xl bg-[#1E1E2A] shadow-xl/20">
+            <div class="text-center">
+                <h1 class="text-xl my-3 text-[#A78BFA] font-[Aradbold]">چطور می‌تونیم به شما کمک کنیم؟</h1>
+                <p>اگر سوالی دارید یا به کمک در استفاده از خدمات نیاز دارید، با تیم تـــاز در تماس باشید. پشتیبانی 24/7 در دسترس شماست و با خوشحالی منتظر ارتباط شما برای رفع هر گونه نیاز یا سوالی خواهیم بود.</p>
+                <div class="flex w-full justify-center mt-8">
+                    <a class="mx-5 rounded-md shadow-xl/20 bg-[#0F0F1A] hover:bg-[#1A1A2E] text-[#E4E4E7] py-2 px-6" href="https://t.me/TahazuS" target="_blank" rel="noopener noreferrer">چت در تلگرام</a>
+                    <a class="mx-5 rounded-md shadow-xl/20 bg-[#0F0F1A] hover:bg-[#1A1A2E] text-[#E4E4E7] py-2 px-6" href="tel:+989301713978">تماس تلفنی</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w-full m-auto">
+  <div class="container m-auto">
+
+    <div class="flex justify-center lg:fixed lg:left-4 lg:bottom-4 flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-1 text-violet-600 mb-4 lg:mb-0" dir="ltr">
+        <a href="https://t.me/TAWSS" target="_blank" rel="noopener noreferrer" class="p-2">
+            <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="https://steamcommunity.com/id/TahazuS" target="_blank" rel="noopener noreferrer" class="p-2">
+            <i class="fa-brands fa-steam"></i>
+        </a>
+        <a href="https://x.com/TahaHadian" target="_blank" rel="noopener noreferrer" class="p-2">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://discord.gg/a7PrkNjXWk" target="_blank" rel="noopener noreferrer" class="p-2">
+            <i class="fa-brands fa-discord"></i>
+        </a>
+    </div>
+
+    <p class="text-center text-[#E4E4E7] my-1 pb-5">تمامی حقوق برای  <span class="text-[#8B5CF6] hover:text-[#A78BFA]">تـــاز</span> محفوظ میباشد.</p>
+
+  </div>
+</footer>
+
+</body>
+
+<!-- Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+</html>
