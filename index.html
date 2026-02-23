@@ -23,6 +23,7 @@
         font-family: 'Aradthin';
         src: url('src/font/Arad-Thin.woff2') format('woff2');
         }
+        [x-cloak] { display: none !important; }
     </style>
 
     <!-- favicon -->
@@ -42,16 +43,23 @@
     <nav class="w-[90%] md:w-[60%] mx-auto px-4 h-full">
         <div class="flex items-center justify-between h-full">
 
-            <a class="text-3xl text-white" href="">تـــاز</a>
+            <a class="text-3xl text-white" href="/">تـــاز</a>
 
-            <div class="hidden md:flex items-center space-x-10 text-[#A1A1AA]">
+            <div class="hidden md:flex items-center gap-10 text-[#A1A1AA]">
                 <a class="hover:text-[#A78BFA] transition-colors" href="#">بلاگ</a>
                 <a class="hover:text-[#A78BFA] transition-colors" href="#">قوانین</a>
                 <a class="hover:text-[#A78BFA] transition-colors" href="#">ارتباط</a>
             </div>
 
             
-            <button @click="open = !open" class="md:hidden text-neutral-400 hover:text-white">
+            <button
+                type="button"
+                @click="open = !open"
+                :aria-expanded="open.toString()"
+                aria-controls="mobile-menu"
+                aria-label="باز کردن منو"
+                class="md:hidden text-neutral-400 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400"
+            >
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -59,12 +67,12 @@
         </div>
     </nav>
 
-    <div x-show="open" @click.away="open = false"
+    <div id="mobile-menu" x-cloak x-show="open" @click.outside="open = false"
          class="md:hidden bg-[#1E1E2A] absolute w-full left-0 right-0 z-50 border-t border-[#2E2E3F]">
         <div class="container mx-auto px-4 py-3 flex flex-col space-y-3 text-center text-[#A1A1AA]">
-            <a class="hover:text-[#E4E4E7] py-2" href="">بلاگ</a>
-            <a class="hover:text-[#E4E4E7] py-2" href="">قوانین</a>
-            <a class="hover:text-[#E4E4E7] py-2" href="">ارتباط</a>
+            <a class="hover:text-[#E4E4E7] py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400" href="#">بلاگ</a>
+            <a class="hover:text-[#E4E4E7] py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400" href="#">قوانین</a>
+            <a class="hover:text-[#E4E4E7] py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400" href="#">ارتباط</a>
         </div>
     </div>
 </header>
