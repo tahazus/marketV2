@@ -80,43 +80,7 @@
 <body class="bg-[#000000] font-[Arad] min-h-screen">
 
 <!-- header -->
-<header x-data="{ open: false }" class="w-full h-16 border-b border-neutral-800">
-    <nav class="w-[90%] md:w-[60%] mx-auto px-4 h-full">
-        <div class="flex items-center justify-between h-full">
-
-            <a class="text-3xl text-white" href="/">تـــاز</a>
-
-            <div class="hidden md:flex items-center gap-10 text-[#A1A1AA]">
-                <a class="hover:text-[#A78BFA] transition-colors" href="#">بلاگ</a>
-                <a class="hover:text-[#A78BFA] transition-colors" href="#">قوانین</a>
-                <a class="hover:text-[#A78BFA] transition-colors" href="#">ارتباط</a>
-            </div>
-
-            
-            <button
-                type="button"
-                @click="open = !open"
-                :aria-expanded="open.toString()"
-                aria-controls="mobile-menu"
-                aria-label="باز کردن منو"
-                class="md:hidden text-neutral-400 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400"
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-    </nav>
-
-    <div id="mobile-menu" x-cloak x-show="open" @click.outside="open = false"
-         class="md:hidden bg-[#1E1E2A] absolute w-full left-0 right-0 z-50 border-t border-[#2E2E3F]">
-        <div class="container mx-auto px-4 py-3 flex flex-col space-y-3 text-center text-[#A1A1AA]">
-            <a class="hover:text-[#E4E4E7] py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400" href="#">بلاگ</a>
-            <a class="hover:text-[#E4E4E7] py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400" href="#">قوانین</a>
-            <a class="hover:text-[#E4E4E7] py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400" href="#">ارتباط</a>
-        </div>
-    </div>
-</header>
+<div id="header"></div>
 
 <main>
 <div class="w-full">
@@ -201,30 +165,12 @@
 </main>
 
 <!-- Footer -->
-<footer class="w-full m-auto">
-  <div class="container m-auto">
-
-    <div class="flex justify-center lg:fixed lg:left-4 lg:bottom-[6.75rem] flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-1 text-violet-600 mb-4 lg:mb-0" dir="ltr">
-        <a href="https://t.me/TAWSS" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
-            <i class="fa-brands fa-telegram fa-2x" aria-hidden="true"></i>
-        </a>
-        <a href="https://steamcommunity.com/id/TahazuS" target="_blank" rel="noopener noreferrer" aria-label="Steam" class="p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
-            <i class="fa-brands fa-steam fa-2x" aria-hidden="true"></i>
-        </a>
-        <a href="https://x.com/TahaHadian" target="_blank" rel="noopener noreferrer" aria-label="X" class="p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
-            <i class="fa-brands fa-x-twitter fa-2x" aria-hidden="true"></i>
-        </a>
-        <a href="https://discord.gg/a7PrkNjXWk" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
-            <i class="fa-brands fa-discord fa-2x" aria-hidden="true"></i>
-        </a>
-    </div>
-
-    <p class="text-center text-[#E4E4E7] my-1 pb-5">تمامی حقوق برای <a href="https://tahazus.ir" class="text-[#8B5CF6] hover:text-[#A78BFA]">تـــاز</a> محفوظ است.</p>
-
-  </div>
-</footer>
+<div id="footer"></div>
 
 </body>
+
+<!-- Components -->
+<script src="/assets/js/include.js"></script>
 
 <!-- Alpine.js -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
