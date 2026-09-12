@@ -1,37 +1,52 @@
-<header x-data="{ open: false }" class="w-full h-16 border-b border-neutral-800">
-    <nav class="w-[90%] md:w-[60%] mx-auto px-4 h-full">
-        <div class="flex items-center justify-between h-full">
+<header x-data="{ open: false }" class="w-full border-b border-neutral-800">
+    <nav aria-label="منوی اصلی" class="mx-auto flex h-16 w-full max-w-4xl items-center px-4">
+        <div class="flex w-full items-center justify-between">
 
-            <a class="text-3xl text-white" href="/">تـــاز</a>
+            <!-- Logo -->
+            <a href="/" class="text-3xl text-white transition-colors hover:text-[#A78BFA] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400" aria-label="صفحه اصلی تاز">
+                تـــاز
+            </a>
 
-            <div class="hidden md:flex items-center gap-10 text-[#A1A1AA]">
-                <a class="hover:text-[#A78BFA] transition-colors" href="blog.html">بلاگ</a>
-                <a class="hover:text-[#A78BFA] transition-colors" href="rules.html">قوانین</a>
-                <a class="hover:text-[#A78BFA] transition-colors" href="contactus.html">ارتباط</a>
+            <!-- Desktop Menu -->
+            <div class="hidden items-center gap-10 text-[#A1A1AA] lg:flex">
+                <a href="blog.html" class="transition-colors hover:text-[#A78BFA] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+                    بلاگ
+                </a>
+
+                <a href="rules.html" class="transition-colors hover:text-[#A78BFA] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+                    قوانین
+                </a>
+
+                <a href="contactus.html" class="transition-colors hover:text-[#A78BFA] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+                    ارتباط
+                </a>
             </div>
 
-            
-            <button
-                type="button"
-                @click="open = !open"
-                :aria-expanded="open.toString()"
-                aria-controls="mobile-menu"
-                aria-label="باز کردن منو"
-                class="md:hidden text-neutral-400 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400"
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <!-- Mobile Menu Button -->
+            <button type="button" @click="open = !open" :aria-expanded="open.toString()" aria-controls="mobile-menu" :aria-label="open ? 'بستن منو' : 'باز کردن منو'"
+                class="inline-flex items-center justify-center rounded-lg p-2 text-neutral-400 transition-colors hover:bg-white/5 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
             </button>
+
         </div>
     </nav>
 
-    <div id="mobile-menu" x-cloak x-show="open" @click.outside="open = false"
-         class="md:hidden bg-[#1E1E2A] absolute w-full left-0 right-0 z-50 border-t border-[#2E2E3F]">
-        <div class="container mx-auto px-4 py-3 flex flex-col space-y-3 text-center text-[#A1A1AA]">
-            <a class="hover:text-[#E4E4E7] py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400" href="#">بلاگ</a>
-            <a class="hover:text-[#E4E4E7] py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400" href="#">قوانین</a>
-            <a class="hover:text-[#E4E4E7] py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400" href="#">ارتباط</a>
-        </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" x-cloak x-show="open" x-transition @click.outside="open = false" class="absolute left-0 right-0 z-50 border-t border-[#2E2E3F] bg-[#1E1E2A] lg:hidden">
+        <nav aria-label="منوی موبایل" class="mx-auto flex w-full max-w-4xl flex-col gap-1 px-4 py-3 text-center text-[#A1A1AA]">
+            <a href="blog.html" @click="open = false" class="rounded-lg py-3 transition-colors hover:bg-white/5 hover:text-[#E4E4E7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+                بلاگ
+            </a>
+
+            <a href="rules.html" @click="open = false" class="rounded-lg py-3 transition-colors hover:bg-white/5 hover:text-[#E4E4E7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+                قوانین
+            </a>
+
+            <a href="contactus.html" @click="open = false" class="rounded-lg py-3 transition-colors hover:bg-white/5 hover:text-[#E4E4E7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+                ارتباط
+            </a>
+        </nav>
     </div>
 </header>
